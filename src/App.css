@@ -27,6 +27,14 @@
 .App-link {
   color: #61dafb;
 }
+.container {
+  .kebab {
+    background-color: #61dafb;
+    &:hover {
+      background-color: #282c34;
+    }
+  }
+}
 
 @keyframes App-logo-spin {
   from {

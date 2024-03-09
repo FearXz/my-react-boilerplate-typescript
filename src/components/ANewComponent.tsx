@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-function MyMain() {
-  const [data, setData] = useState<boolean>(false);
+function ANewComponent() {
+  const [data, setData] = useState(false);
 
   return (
     <Container>
-      <Row>
+      <Row className="kebab">
         {data && (
           <Col xs={12} className=" d-flex justify-content-center">
             <div className=" fs-1 text-danger bg-darkgray">MEGA KEBAB</div>
@@ -21,4 +21,4 @@ function MyMain() {
   );
 }
 
-export default MyMain;
+export default ANewComponent;
